@@ -1,0 +1,51 @@
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.deps.json
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.pdb
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Data.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Data.pdb
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.AssemblyReference.cache
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.AssemblyInfoInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.AssemblyInfo.cs
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.CoreCompileInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.CopyComplete
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\refint\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.pdb
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\ref\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.deps.json
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Data.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Data.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.AssemblyReference.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.AssemblyInfoInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.AssemblyInfo.cs
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.CoreCompileInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.CopyComplete
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\refint\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\ref\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.deps.json
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Security.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Data.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Data.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.AssemblyReference.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.AssemblyInfoInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.AssemblyInfo.cs
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.CoreCompileInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.csproj.CopyComplete
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\refint\Tailspin.Surveys.Security.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\Tailspin.Surveys.Security.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Security\obj\Debug\net5.0\ref\Tailspin.Surveys.Security.dll

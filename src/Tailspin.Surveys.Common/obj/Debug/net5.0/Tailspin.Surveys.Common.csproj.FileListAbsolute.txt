@@ -1,0 +1,39 @@
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.deps.json
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.csproj.AssemblyReference.cache
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.AssemblyInfoInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.AssemblyInfo.cs
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.csproj.CoreCompileInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\refint\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\ref\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.deps.json
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.csproj.AssemblyReference.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.AssemblyInfoInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.AssemblyInfo.cs
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.csproj.CoreCompileInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\refint\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\ref\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.deps.json
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.csproj.AssemblyReference.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.AssemblyInfoInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.AssemblyInfo.cs
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.csproj.CoreCompileInputs.cache
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\refint\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\ref\Tailspin.Surveys.Common.dll
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.runtimeconfig.json
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\bin\Debug\net5.0\Tailspin.Surveys.Common.runtimeconfig.dev.json
+C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Common\obj\Debug\net5.0\Tailspin.Surveys.Common.genruntimeconfig.cache

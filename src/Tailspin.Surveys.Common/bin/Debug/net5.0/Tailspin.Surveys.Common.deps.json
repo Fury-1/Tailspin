@@ -1,0 +1,711 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Tailspin.Surveys.Common/1.0.0": {
+        "dependencies": {
+          "Angular.UI.Bootstrap": "1.3.3",
+          "AngularJS.Core": "1.7.5",
+          "Gulp.js": "1.0.0",
+          "MSBuild.Gulp": "0.5.1",
+          "MSBuild.Node": "0.5.1",
+          "Microsoft.AspNetCore.NodeServices": "3.1.31",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.0",
+          "Microsoft.NETCore.App": "2.2.8",
+          "Microsoft.jQuery.Unobtrusive.Validation": "3.2.11",
+          "Newtonsoft.Json": "13.0.1",
+          "Node.js": "5.3.0",
+          "Node.js.redist": "17.2.0",
+          "Npgsql": "5.0.15",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "gulp-util.TypeScript.DefinitelyTyped": "0.0.9",
+          "jQuery": "3.6.1",
+          "jQuery.Validation": "1.19.5"
+        },
+        "runtime": {
+          "Tailspin.Surveys.Common.dll": {}
+        }
+      },
+      "Angular.UI.Bootstrap/1.3.3": {},
+      "AngularJS.Core/1.7.5": {},
+      "chalk.TypeScript.DefinitelyTyped/0.0.1": {},
+      "gulp-util.TypeScript.DefinitelyTyped/0.0.9": {
+        "dependencies": {
+          "chalk.TypeScript.DefinitelyTyped": "0.0.1",
+          "node.TypeScript.DefinitelyTyped": "0.0.1",
+          "through2.TypeScript.DefinitelyTyped": "0.0.1",
+          "vinyl.TypeScript.DefinitelyTyped": "0.0.1"
+        }
+      },
+      "Gulp.js/1.0.0": {
+        "dependencies": {
+          "Npm.js": "1.3.15.7"
+        }
+      },
+      "Humanizer.Core/2.8.26": {
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.26.1919"
+          }
+        }
+      },
+      "jQuery/3.6.1": {},
+      "jQuery.Validation/1.19.5": {
+        "dependencies": {
+          "jQuery": "3.6.1"
+        }
+      },
+      "Microsoft.AspNetCore.NodeServices/3.1.31": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Console": "3.1.31",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.NodeServices.dll": {
+            "assemblyVersion": "3.1.31.0",
+            "fileVersion": "3.100.3122.51409"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.EntityFrameworkCore/5.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.0",
+          "Microsoft.Extensions.Caching.Memory": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "System.Collections.Immutable": "5.0.0",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Diagnostics.DiagnosticSource": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {},
+      "Microsoft.EntityFrameworkCore.Design/5.0.0": {
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.21115"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Configuration/3.1.31": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.1.31": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.31"
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {},
+      "Microsoft.Extensions.Logging/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {},
+      "Microsoft.Extensions.Logging.Configuration/3.1.31": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.31"
+        }
+      },
+      "Microsoft.Extensions.Logging.Console/3.1.31": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "Microsoft.Extensions.Logging.Configuration": "3.1.31"
+        }
+      },
+      "Microsoft.Extensions.Options/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/3.1.31": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.31",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {},
+      "Microsoft.jQuery.Unobtrusive.Validation/3.2.11": {
+        "dependencies": {
+          "jQuery": "3.6.1",
+          "jQuery.Validation": "1.19.5"
+        }
+      },
+      "Microsoft.NETCore.App/2.2.8": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostPolicy": "2.2.8",
+          "Microsoft.NETCore.Platforms": "2.2.4",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "NETStandard.Library": "2.0.3"
+        }
+      },
+      "Microsoft.NETCore.DotNetAppHost/2.2.8": {},
+      "Microsoft.NETCore.DotNetHostPolicy/2.2.8": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "2.2.8"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostResolver/2.2.8": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "2.2.8"
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.2.4": {},
+      "Microsoft.NETCore.Targets/2.0.0": {},
+      "MSBuild.Gulp/0.5.1": {
+        "dependencies": {
+          "MSBuild.Node": "0.5.1"
+        }
+      },
+      "MSBuild.Node/0.5.1": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.4"
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "Node.js/5.3.0": {},
+      "Node.js.redist/17.2.0": {},
+      "node.TypeScript.DefinitelyTyped/0.0.1": {},
+      "Npgsql/5.0.15": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "runtime": {
+          "lib/net5.0/Npgsql.dll": {
+            "assemblyVersion": "5.0.15.0",
+            "fileVersion": "5.0.15.0"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/5.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "Npgsql": "5.0.15"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Npgsql": "5.0.15",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Npm.js/1.3.15.7": {
+        "dependencies": {
+          "Node.js": "5.3.0"
+        }
+      },
+      "System.Collections.Immutable/5.0.0": {},
+      "System.ComponentModel.Annotations/5.0.0": {},
+      "System.Diagnostics.DiagnosticSource/5.0.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
+      "through2.TypeScript.DefinitelyTyped/0.0.1": {
+        "dependencies": {
+          "node.TypeScript.DefinitelyTyped": "0.0.1"
+        }
+      },
+      "vinyl.TypeScript.DefinitelyTyped/0.0.1": {
+        "dependencies": {
+          "node.TypeScript.DefinitelyTyped": "0.0.1"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tailspin.Surveys.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Angular.UI.Bootstrap/1.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1fHocH0Tp5jn6mHAv0YOLHS3p83i2xYbiS+2TB//U+Qta7DHnWu6WyqoYETUMyaIhq9Uok5se8s//Oc3te6qOw==",
+      "path": "angular.ui.bootstrap/1.3.3",
+      "hashPath": "angular.ui.bootstrap.1.3.3.nupkg.sha512"
+    },
+    "AngularJS.Core/1.7.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9H2C6pxitUgo1BLmWy7U3AvkhXXdPA+jHZJZCKf9FfsfEalCf8olp7zLCiKvp7pseBuuBqbyuR/VHc2sAMfH9w==",
+      "path": "angularjs.core/1.7.5",
+      "hashPath": "angularjs.core.1.7.5.nupkg.sha512"
+    },
+    "chalk.TypeScript.DefinitelyTyped/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BjvbLFEoXgku1XjS1hUZPKDfzY99Dm2viGv1m6q7kAai5HYIS+3YncLT+CtEdtWsljznUBSP9gBGoD02csGDuQ==",
+      "path": "chalk.typescript.definitelytyped/0.0.1",
+      "hashPath": "chalk.typescript.definitelytyped.0.0.1.nupkg.sha512"
+    },
+    "gulp-util.TypeScript.DefinitelyTyped/0.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p0HwVJCIT9DzhI4NvaNyFtQCiE5jrpcnOud+kE7cWJLh8ct+nFc04lCmhEgayd68cs5+C8vwmSn9j8meYMHCeg==",
+      "path": "gulp-util.typescript.definitelytyped/0.0.9",
+      "hashPath": "gulp-util.typescript.definitelytyped.0.0.9.nupkg.sha512"
+    },
+    "Gulp.js/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kG9MvdK2/pvB4MLJO1c2cyQhfkpIkOtgAZAEo4evL92hNtlYJqWL/IIhR42bcPSNQnL6cjgCkXp8DJ0elkM/1w==",
+      "path": "gulp.js/1.0.0",
+      "hashPath": "gulp.js.1.0.0.nupkg.sha512"
+    },
+    "Humanizer.Core/2.8.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "path": "humanizer.core/2.8.26",
+      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "jQuery/3.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qkG79nkEvz6Oeabe5+qTB0O/FZagMmzpaafeAJZIppYTfrJim75VWNYuR26MLQCx8FWoqarqjpaDZ0/YubKmWg==",
+      "path": "jquery/3.6.1",
+      "hashPath": "jquery.3.6.1.nupkg.sha512"
+    },
+    "jQuery.Validation/1.19.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lBHoaszLpKYxiVCWwIoxdqSCrlqnW9jeVMinMQ0uNMFcl3rmY8XyeaerfGLRbkVRUzh/fM3APaKepEezrR5AcA==",
+      "path": "jquery.validation/1.19.5",
+      "hashPath": "jquery.validation.1.19.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.NodeServices/3.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AGz9JkHFqSGlus2upKbrBBmmNNZoDzva7bYGdoRFqqSEO1Hstk2icdIxIITTlPZq3CtxFRLePRbYHmjaaQLIuw==",
+      "path": "microsoft.aspnetcore.nodeservices/3.1.31",
+      "hashPath": "microsoft.aspnetcore.nodeservices.3.1.31.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QJk6pwN5wCriRdaNXQQxifeDNYephqqDMSXAQFX1nZjHwz/hChD0kDwklX20FexN9IAwQftepMbglcjwTX3l4Q==",
+      "path": "microsoft.entityframeworkcore/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PCDiskNvB+1rs+d3ET0Itm3mPj6+CpFO7V1nPXfVL6ipS6+27vKs9mnEP4C8vTr2BhSpyvKQetp4Z0ktrqv+wg==",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l1c/1ge8ymXgLqtstTyX3PZOLRuFo1jn0FQ9H4ag3Bwz70KTMyEOXwkKBZZ1gDlCibETrooflMis8wvvXFh5YQ==",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Design/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kyd66aJDTZjpo4awTpJb6BOVGnhS/pZgD3O2JH1A9QhtE+0kqEVXJLpNN9CPfbKWERipXAEUyUadPHNclZCc3g==",
+      "path": "microsoft.entityframeworkcore.design/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UMhoo0t3eii73AUwsvbGpYMGXS0ga/uA/cukgJza+IJ4EtcuNfdhGsA3emzf9nYpQ7urJzWzU6VOfG59h935Ag==",
+      "path": "microsoft.entityframeworkcore.relational/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fF0sVEUkoGeJutGIzwnYsJJ9o2hxEGJRpSaCxPq63rhSwn0hBmCwf9ET4QqYqO9Pc6+ODXenAQa095CWzuM4Kg==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bu8As90/SBAouMZ6fJ+qRNo1X+KgHGrVueFhhYi+E5WqEhcnp2HoWRFnMzXQ6g4RdZbvPowFerSbKNH4Dtg5yg==",
+      "path": "microsoft.extensions.caching.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/1qPCleFOkJe0O+xmFqCNLFYQZTJz965sVw8CUB/BQgsApBwzAUsL2BUkDvQW+geRUVTXUS9zLa0pBjC2VJ1gA==",
+      "path": "microsoft.extensions.caching.memory/5.0.0",
+      "hashPath": "microsoft.extensions.caching.memory.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/3.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Edrk9O36/1VeWNB93JRE8rxq/yyseOgrQO5aVzvA0gNQEo3O0TuyuGnXwEdRcAskBZFSMfcLlocu6bPpQCtKuA==",
+      "path": "microsoft.extensions.configuration/3.1.31",
+      "hashPath": "microsoft.extensions.configuration.3.1.31.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/3.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5OuT2FZc5yP39JR1/75og199S6AlHOX7zntqKcydzVGZUark+IYb9dVtHmCmOAxya89cpIsWMILv4T3uwoRPLA==",
+      "path": "microsoft.extensions.configuration.binder/3.1.31",
+      "hashPath": "microsoft.extensions.configuration.binder.3.1.31.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MgOwK6tPzB6YNH21wssJcw/2MKwee8b2gI7SllYfn6rvTpIrVvVS5HAjSU2vqSku1fwqRvWP0MdIi14qjd93Aw==",
+      "path": "microsoft.extensions.logging/5.0.0",
+      "hashPath": "microsoft.extensions.logging.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Configuration/3.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qwIO/5kQhCEzXuCZFZ4QOgcDFG6dcSJxyBOZwqGoa0SHDQvuLmCHRSdjEjG/dSI4T8cCYaLmIwnEe37iPCu9AQ==",
+      "path": "microsoft.extensions.logging.configuration/3.1.31",
+      "hashPath": "microsoft.extensions.logging.configuration.3.1.31.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Console/3.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HjPEFrzT5qbpTH/wsfEDaiHklmy5Zm4g8jeIurcOnBAhJLoMsNAY37Iln1ghoTKVUejxSqGCXLzboZZAvb4xUw==",
+      "path": "microsoft.extensions.logging.console/3.1.31",
+      "hashPath": "microsoft.extensions.logging.console.3.1.31.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
+      "path": "microsoft.extensions.options/5.0.0",
+      "hashPath": "microsoft.extensions.options.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/3.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmTfbAZEf0ulKYQata+rVfCO7GfBxEepss/xHUzMd19wTKStUmC5EBkcmJBTUIJTYlDsfzufexTrWtDqIRB81Q==",
+      "path": "microsoft.extensions.options.configurationextensions/3.1.31",
+      "hashPath": "microsoft.extensions.options.configurationextensions.3.1.31.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Validation/3.2.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8qGe1q3vV5Fwbpb0OSI8SxSiIBeFt9sgAvFvPwgZuuL+PZ+z0VsPB5yeqT+SrvPKpyVpN33MLhgvSW5Zf07IsQ==",
+      "path": "microsoft.jquery.unobtrusive.validation/3.2.11",
+      "hashPath": "microsoft.jquery.unobtrusive.validation.3.2.11.nupkg.sha512"
+    },
+    "Microsoft.NETCore.App/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GOxlvyc8hFrnhDjYlm25JJ7PwoyeoOpZzcg6ZgF8n8l6VxezNupRkkTeA2ek1WsspN0CdAoA8e7iDVNU84/F+Q==",
+      "path": "microsoft.netcore.app/2.2.8",
+      "hashPath": "microsoft.netcore.app.2.2.8.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetAppHost/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lh1F6z41levvtfC3KuuiQe9ppWKRP1oIB42vP1QNQE4uumo95h+LpjPDeysX1DlTjCzG0BVGSUEpCW5fHkni7w==",
+      "path": "microsoft.netcore.dotnetapphost/2.2.8",
+      "hashPath": "microsoft.netcore.dotnetapphost.2.2.8.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostPolicy/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rOHr0Dk87vaiq9d1hMpXETB4IKq1jIiPQlVKNUjRGilK/cjOcadhsk+1MsrJ/GnM3eovhy8zW2PGkN8pYEolnw==",
+      "path": "microsoft.netcore.dotnethostpolicy/2.2.8",
+      "hashPath": "microsoft.netcore.dotnethostpolicy.2.2.8.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostResolver/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-culLr+x2GvUkXVGi4ULZ7jmWJEhuAMyS7iTWBlkWnqbKtYJ36ZlgHbw/6qTm82790gJemEFeo9RehDwfRXfJzA==",
+      "path": "microsoft.netcore.dotnethostresolver/2.2.8",
+      "hashPath": "microsoft.netcore.dotnethostresolver.2.2.8.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZeCe9PRhMpKzVWrNgTvWpLjJigppErzN663lJOqAzcx0xjXpcAMpIImFI46IE1gze18VWw6bbfo7JDkcaRWuOg==",
+      "path": "microsoft.netcore.platforms/2.2.4",
+      "hashPath": "microsoft.netcore.platforms.2.2.4.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
+      "path": "microsoft.netcore.targets/2.0.0",
+      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "MSBuild.Gulp/0.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hA4e5EE2ze/dW5G7pX/T4AXvOOQF2wM5bgPa8reER6z01BNAA/iVaObk3xM0l0hrcjv60Nm9r3L2p3m7/45tVg==",
+      "path": "msbuild.gulp/0.5.1",
+      "hashPath": "msbuild.gulp.0.5.1.nupkg.sha512"
+    },
+    "MSBuild.Node/0.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bjozy5wu0VvPP0/UHgyCliEX7gV8j5DJb2LVAgNRiYSz80riIO1BbV8wDvkPp9NJvGbzz6KdCJ7Tlfe0Q8Z03w==",
+      "path": "msbuild.node/0.5.1",
+      "hashPath": "msbuild.node.0.5.1.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Node.js/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WebrKeV0cXE4TaYriZQfDRNO/UMYnlQgR/CrHEx4kLgiRsY6F0Ve2UVS7qDHQHAjj/KXo3ygJY6HDhf91hwJDw==",
+      "path": "node.js/5.3.0",
+      "hashPath": "node.js.5.3.0.nupkg.sha512"
+    },
+    "Node.js.redist/17.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bjOwMbawThOn1zlq24t5/hLDT2IxF70K2WjfZ9Bsam1Y4+16cDiOPX3VUDuEGA3NTgMFw2/RJw5l3fY55crA8A==",
+      "path": "node.js.redist/17.2.0",
+      "hashPath": "node.js.redist.17.2.0.nupkg.sha512"
+    },
+    "node.TypeScript.DefinitelyTyped/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zzFB7FobtLgbxZvwvepHxggqM3xuXFWiU+Jw+biIvMydr2gJcmcczXOq9svAoLSiXM14pbigUxope7tmzpLvaQ==",
+      "path": "node.typescript.definitelytyped/0.0.1",
+      "hashPath": "node.typescript.definitelytyped.0.0.1.nupkg.sha512"
+    },
+    "Npgsql/5.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rWW9qi/ZgV0cvTWiIEQ6XWKoniPqzZIdiail4XYt7TDavt+LLYh9SYMNR9abH39DWooI45Hxt9SAq7LkTejoPg==",
+      "path": "npgsql/5.0.15",
+      "hashPath": "npgsql.5.0.15.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SGLNTyrC9kuCbrYG2kFZGhOE/sq+EekxgpvRlnJIDQ4kriQrtT2pkrI9Wuox8Wsa2Jvf9bHqbQ9pTKyXpx6BiQ==",
+      "path": "npgsql.entityframeworkcore.postgresql/5.0.0",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.5.0.0.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+taA6t8sRI0JTbyCZH0GobEtJYvU4aAGBf5/2/CutWHiYpO2nLfJ8SQSyWYMKakrwn1/NDM9VV85mGEAzBZ7LQ==",
+      "path": "npgsql.entityframeworkcore.postgresql.design/1.1.0",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512"
+    },
+    "Npm.js/1.3.15.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZTN8ab5zugdvcQ10gIA6W953Tl1j8BpA7aM5t46CdUfkzabpV2NwFR3O3WEPfADyKuBWr+yyDwuu8lMHzeK3ZA==",
+      "path": "npm.js/1.3.15.7",
+      "hashPath": "npm.js.1.3.15.7.nupkg.sha512"
+    },
+    "System.Collections.Immutable/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+      "path": "system.collections.immutable/5.0.0",
+      "hashPath": "system.collections.immutable.5.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tCQTzPsGZh/A9LhhA6zrqCRV4hOHsK90/G7q3Khxmn6tnB1PuNU0cRaKANP2AWcF9bn0zsuOoZOSrHuJk6oNBA==",
+      "path": "system.diagnostics.diagnosticsource/5.0.0",
+      "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    },
+    "through2.TypeScript.DefinitelyTyped/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lv7erfcV6FWix5GL6Yb1JOQ2vN/sgy6k7T5gXTe86hT7JViVgd2uijOjg/jjNsw57X0qQ1urcZAYbd3aD7Ca4w==",
+      "path": "through2.typescript.definitelytyped/0.0.1",
+      "hashPath": "through2.typescript.definitelytyped.0.0.1.nupkg.sha512"
+    },
+    "vinyl.TypeScript.DefinitelyTyped/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lsP2SBViw2xWSfAbvXNX/IuGuDY1Y+2/Tkk7Ek9wWAkrw/pPrQhjkzf2BhGBbHA/4dfwcmws95gbpVTfIKSQCg==",
+      "path": "vinyl.typescript.definitelytyped/0.0.1",
+      "hashPath": "vinyl.typescript.definitelytyped.0.0.1.nupkg.sha512"
+    }
+  }
+}
