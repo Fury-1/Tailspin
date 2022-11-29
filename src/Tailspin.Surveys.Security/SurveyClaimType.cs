@@ -7,5 +7,10 @@ namespace Tailspin.Surveys.Security
     {
         public const string SurveyUserIdClaimType = "survey_userid";
         public const string SurveyTenantIdClaimType = "survey_tenantid";
+
+
+        //static string SurveyUserIdClaimType;
+
+       // static string SurveyTenantIdClaimType;
     }
 }
