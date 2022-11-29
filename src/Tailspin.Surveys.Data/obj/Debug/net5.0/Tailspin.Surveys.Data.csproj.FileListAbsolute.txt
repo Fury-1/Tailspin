@@ -52,3 +52,21 @@ C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidanc
 C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.pdb
 C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.genruntimeconfig.cache
 C:\Users\Aakash.Dayakar\Desktop\11 - Copy - Copy - Copy\multitenant-saas-guidance\src\Tailspin.Surveys.Data\obj\Debug\net5.0\ref\Tailspin.Surveys.Data.dll
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Data.deps.json
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Data.runtimeconfig.json
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Data.runtimeconfig.dev.json
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Data.dll
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Data.pdb
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Common.dll
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\bin\Debug\net5.0\Tailspin.Surveys.Common.pdb
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.csproj.AssemblyReference.cache
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.AssemblyInfoInputs.cache
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.AssemblyInfo.cs
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.csproj.CoreCompileInputs.cache
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.csproj.CopyComplete
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.dll
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\refint\Tailspin.Surveys.Data.dll
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.pdb
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\Tailspin.Surveys.Data.genruntimeconfig.cache
+C:\Kelsa\Tailspin\Tailspin\src\Tailspin.Surveys.Data\obj\Debug\net5.0\ref\Tailspin.Surveys.Data.dll

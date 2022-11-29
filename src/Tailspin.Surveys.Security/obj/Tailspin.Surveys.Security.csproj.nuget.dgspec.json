@@ -1,27 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {}
+    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
+    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
+        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
         "projectName": "Tailspin.Surveys.Common",
-        "projectPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
-        "packagesPath": "C:\\Users\\Aakash.Dayakar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Common\\obj\\",
+        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
+        "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
+        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aakash.Dayakar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Varnashree.Rachith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,10 +54,6 @@
             "AngularJS.Core": {
               "target": "Package",
               "version": "[1.7.5, )"
-            },
-            "Gulp.js": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             },
             "MSBuild.Gulp": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -121,6 +124,10 @@
             "jQuery.Validation": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "vinyl.TypeScript.DefinitelyTyped": {
+              "target": "Package",
+              "version": "[0.6.2, )"
             }
           },
           "imports": [
@@ -143,32 +150,39 @@
         }
       }
     },
-    "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
+    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
+        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
         "projectName": "Tailspin.Surveys.Data",
-        "projectPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
-        "packagesPath": "C:\\Users\\Aakash.Dayakar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Data\\obj\\",
+        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
+        "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
+        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aakash.Dayakar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Varnashree.Rachith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
-                "projectPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj"
+              "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
+                "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj"
               }
             }
           }
@@ -254,32 +268,39 @@
         }
       }
     },
-    "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {
+    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
+        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
         "projectName": "Tailspin.Surveys.Security",
-        "projectPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
-        "packagesPath": "C:\\Users\\Aakash.Dayakar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Security\\obj\\",
+        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
+        "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
+        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aakash.Dayakar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Varnashree.Rachith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
-                "projectPath": "C:\\Users\\Aakash.Dayakar\\Desktop\\11 - Copy - Copy - Copy\\multitenant-saas-guidance\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj"
+              "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
+                "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj"
               }
             }
           }
@@ -301,10 +322,6 @@
             "AngularJS.Core": {
               "target": "Package",
               "version": "[1.7.5, )"
-            },
-            "Gulp.js": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             },
             "MSBuild.Gulp": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -373,6 +390,10 @@
             "jQuery.Validation": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "vinyl.TypeScript.DefinitelyTyped": {
+              "target": "Package",
+              "version": "[0.6.2, )"
             }
           },
           "imports": [

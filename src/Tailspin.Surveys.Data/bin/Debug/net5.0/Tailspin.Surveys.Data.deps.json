@@ -34,12 +34,7 @@
           "chalk.TypeScript.DefinitelyTyped": "0.0.1",
           "node.TypeScript.DefinitelyTyped": "0.0.1",
           "through2.TypeScript.DefinitelyTyped": "0.0.1",
-          "vinyl.TypeScript.DefinitelyTyped": "0.0.1"
-        }
-      },
-      "Gulp.js/1.0.0": {
-        "dependencies": {
-          "Npm.js": "1.3.15.7"
+          "vinyl.TypeScript.DefinitelyTyped": "0.6.2"
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -548,11 +543,6 @@
             "assemblyVersion": "1.1.0.0",
             "fileVersion": "1.1.0.0"
           }
-        }
-      },
-      "Npm.js/1.3.15.7": {
-        "dependencies": {
-          "Node.js": "5.3.0"
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1122,7 +1112,7 @@
           "node.TypeScript.DefinitelyTyped": "0.0.1"
         }
       },
-      "vinyl.TypeScript.DefinitelyTyped/0.0.1": {
+      "vinyl.TypeScript.DefinitelyTyped/0.6.2": {
         "dependencies": {
           "node.TypeScript.DefinitelyTyped": "0.0.1"
         }
@@ -1131,7 +1121,6 @@
         "dependencies": {
           "Angular.UI.Bootstrap": "1.3.3",
           "AngularJS.Core": "1.7.5",
-          "Gulp.js": "1.0.0",
           "Microsoft.AspNetCore.NodeServices": "3.1.31",
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.NETCore.App": "2.2.8",
@@ -1144,7 +1133,8 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
           "gulp-util.TypeScript.DefinitelyTyped": "0.0.9",
           "jQuery": "3.6.1",
-          "jQuery.Validation": "1.19.5"
+          "jQuery.Validation": "1.19.5",
+          "vinyl.TypeScript.DefinitelyTyped": "0.6.2"
         },
         "runtime": {
           "Tailspin.Surveys.Common.dll": {}
@@ -1185,13 +1175,6 @@
       "sha512": "sha512-p0HwVJCIT9DzhI4NvaNyFtQCiE5jrpcnOud+kE7cWJLh8ct+nFc04lCmhEgayd68cs5+C8vwmSn9j8meYMHCeg==",
       "path": "gulp-util.typescript.definitelytyped/0.0.9",
       "hashPath": "gulp-util.typescript.definitelytyped.0.0.9.nupkg.sha512"
-    },
-    "Gulp.js/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kG9MvdK2/pvB4MLJO1c2cyQhfkpIkOtgAZAEo4evL92hNtlYJqWL/IIhR42bcPSNQnL6cjgCkXp8DJ0elkM/1w==",
-      "path": "gulp.js/1.0.0",
-      "hashPath": "gulp.js.1.0.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -1619,13 +1602,6 @@
       "sha512": "sha512-+taA6t8sRI0JTbyCZH0GobEtJYvU4aAGBf5/2/CutWHiYpO2nLfJ8SQSyWYMKakrwn1/NDM9VV85mGEAzBZ7LQ==",
       "path": "npgsql.entityframeworkcore.postgresql.design/1.1.0",
       "hashPath": "npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512"
-    },
-    "Npm.js/1.3.15.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZTN8ab5zugdvcQ10gIA6W953Tl1j8BpA7aM5t46CdUfkzabpV2NwFR3O3WEPfADyKuBWr+yyDwuu8lMHzeK3ZA==",
-      "path": "npm.js/1.3.15.7",
-      "hashPath": "npm.js.1.3.15.7.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",
@@ -2075,12 +2051,12 @@
       "path": "through2.typescript.definitelytyped/0.0.1",
       "hashPath": "through2.typescript.definitelytyped.0.0.1.nupkg.sha512"
     },
-    "vinyl.TypeScript.DefinitelyTyped/0.0.1": {
+    "vinyl.TypeScript.DefinitelyTyped/0.6.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lsP2SBViw2xWSfAbvXNX/IuGuDY1Y+2/Tkk7Ek9wWAkrw/pPrQhjkzf2BhGBbHA/4dfwcmws95gbpVTfIKSQCg==",
-      "path": "vinyl.typescript.definitelytyped/0.0.1",
-      "hashPath": "vinyl.typescript.definitelytyped.0.0.1.nupkg.sha512"
+      "sha512": "sha512-Ve1s7YIFLfN0yAj+TCDpKndbJy0cTcrUxbnXoqPKBF9BHdwtuEdlYPoRygNbZwrfNXPSLubl9YQizE7k8e3sFA==",
+      "path": "vinyl.typescript.definitelytyped/0.6.2",
+      "hashPath": "vinyl.typescript.definitelytyped.0.6.2.nupkg.sha512"
     },
     "Tailspin.Surveys.Common/1.0.0": {
       "type": "project",
