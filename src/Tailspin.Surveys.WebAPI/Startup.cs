@@ -58,8 +58,7 @@ namespace Tailspin.Surveys.WebAPI
             });
 
             // Add Entity Framework services to the services container.
-            services.AddEntityFrameworkSqlServer()
-                .AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetSection("Data")["SurveysConnectionString"]));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(Configuration.GetSection("Data")["SurveysConnectionString"]));
 
             services.AddScoped<TenantManager, TenantManager>();
             services.AddScoped<UserManager, UserManager>();

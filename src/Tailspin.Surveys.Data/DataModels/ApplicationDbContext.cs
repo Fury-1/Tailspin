@@ -13,82 +13,98 @@ namespace Tailspin.Surveys.Data.DataModels
  
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
+        //public override 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<User>(b =>
+           
+            modelBuilder.Entity<User>(entity =>
             {
-                b.ToTable("User");
-                b.HasKey(u => u.Id);
-                b.Property(u => u.DisplayName)
-                    .IsRequired()
-                    .HasMaxLength(256);
-                b.Property(u => u.Email)
-                    .IsRequired()
-                    .HasMaxLength(256);
-                b.Property(u => u.ConcurrencyStamp)
-                    .IsRequired()
-                    .IsConcurrencyToken();
-                b.Property(u => u.ObjectId)
-                    .IsRequired()
-                    .HasMaxLength(38);
-                b.Property(u => u.Created)
-                    .IsRequired();
-                b.HasIndex(u => u.ObjectId)
-                    .HasDatabaseName("UserObjectIdIndex");
+                entity.ToTable("Users");
+                entity.HasKey(e => new { e.Id, e.TenantId })
+                    .HasName("PK_User");
+
+                entity.Property(e => e.Id).HasDefaultValueSql("uuid_generate_v4()");
+
+                entity.Property(e => e.Created).HasColumnType("timestamp with time zone");
+
+                entity.HasOne(d => d.Tenant)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.TenantId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_User_Tenant_TenantId");
             });
 
-            modelBuilder.Entity<Tenant>(b =>
+            modelBuilder.Entity<Tenant>(entity =>
             {
-                b.ToTable("Tenant");
-                b.HasKey(t => t.Id);
-                b.Property(t => t.ConcurrencyStamp)
-                    .IsRequired()
-                    .IsConcurrencyToken();
-                b.Property(t => t.IssuerValue)
-                    .IsRequired()
-                    .HasMaxLength(1000);
-                b.Property(t => t.Created)
-                    .IsRequired();
-                b.HasMany(typeof(User)).WithOne()
-                    .HasForeignKey("TenantId");
-                b.HasIndex(t => t.IssuerValue)
-                    .HasDatabaseName("IssuerValueIndex")
-                    .IsUnique();
+                entity.Property(e => e.Id).HasDefaultValueSql("uuid_generate_v4()");
+
+                entity.Property(e => e.Created).HasColumnType("timestamp with time zone");
             });
 
-            modelBuilder.Entity<SurveyContributor>(b =>
+            modelBuilder.Entity<SurveyContributor>(entity =>
             {
-                b.HasKey(r => new { r.SurveyId, r.UserId });
+                entity.HasKey(e => new { e.SurveyId, e.UserId, e.TenantId })
+                    .HasName("SurveyContributors_pkey");
+
+                entity.Property(e => e.SurveyId).HasDefaultValueSql("uuid_generate_v4()");
+
+                entity.HasOne(d => d.Survey)
+                    .WithMany(p => p.SurveyContributors)
+                    .HasForeignKey(d => new { d.SurveyId, d.TenantId })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_SurveyContributors_Surveys_SurveyId1");
             });
 
-            modelBuilder.Entity<Survey>(b =>
+            modelBuilder.Entity<Survey>(entity =>
             {
-                b.ToTable("Survey");
-                b.HasKey(s => s.Id);
-                b.HasOne(s => s.Owner)
-                    .WithMany()
-                    .OnDelete(DeleteBehavior.Restrict);
+                entity.HasKey(e => new { e.Id, e.TenantId })
+                    .HasName("Surveys_pkey");
+
+                entity.Property(e => e.Id).HasDefaultValueSql("uuid_generate_v4()");
+
+                entity.Property(e => e.Title).IsRequired();
+
+                entity.HasOne(d => d.Tenant)
+                    .WithMany(p => p.Surveys)
+                    .HasForeignKey(d => d.TenantId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Surveys_tenant_tenantId");
             });
 
-            modelBuilder.Entity<ContributorRequest>(b =>
+            modelBuilder.Entity<ContributorRequest>(entity =>
             {
-                b.ToTable("ContributorRequest");
-                b.HasKey(cr => cr.Id);
-                b.HasIndex(cr => new { cr.SurveyId, cr.EmailAddress })
-                    .HasDatabaseName("SurveyIdEmailAddressIndex")
-                    .IsUnique();
-                b.Property(cr => cr.EmailAddress)
-                    .IsRequired()
-                    .HasMaxLength(256);
-                b.Property(cr => cr.SurveyId)
-                    .IsRequired();
+                entity.HasKey(e => new { e.TenantId, e.Id })
+                    .HasName("ContributorRequests_pkey");
+
+                entity.Property(e => e.Id).HasDefaultValueSql("uuid_generate_v4()");
+
+                entity.Property(e => e.Created).HasColumnType("timestamp with time zone");
+
+                entity.Property(e => e.EmailAddress).IsRequired();
+
+                entity.HasOne(d => d.Survey)
+                    .WithMany(p => p.ContributorRequests)
+                    .HasForeignKey(d => new { d.SurveyId, d.TenantId })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ContributorRequests_Surveys_SurveyId");
             });
 
-            modelBuilder.Entity<SurveyContributor>(b =>
+            modelBuilder.Entity<Question>(entity =>
             {
-                b.ToTable("SurveyContributor");
+                entity.HasKey(e => new { e.TenantId, e.Id })
+                    .HasName("Questions_pkey");
+
+                entity.Property(e => e.Id).HasDefaultValueSql("uuid_generate_v4()");
+
+                entity.Property(e => e.Text).IsRequired();
+
+                entity.HasOne(d => d.Survey)
+                    .WithMany(p => p.Questions)
+                    .HasForeignKey(d => new { d.SurveyId, d.TenantId })
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Questions_SurveyId");
             });
         }
 

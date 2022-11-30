@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -37,7 +38,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the Question</param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="QuestionDTO"/> if found, otherwise a <see cref="NotFoundResult"/></returns>
         [HttpGet("questions/{id:int}", Name = "GetQuestion")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(Guid id)
         {
             var question = await _questionStore.GetQuestionAsync(id);
             if (question == null)
@@ -60,7 +61,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="questionDto">A <see cref="QuestionDTO"/> containing property values of the <see cref="Question"/></param>
         /// <returns>A <see cref="CreatedAtRouteResult"/> of the newly created <see cref="Question"/> if successfully persisted</returns>
         [HttpPost("surveys/{id:int}/questions")]
-        public async Task<IActionResult> Create(int id, [FromBody] QuestionDTO questionDto)
+        public async Task<IActionResult> Create(Guid id, [FromBody] QuestionDTO questionDto)
         {
             if (questionDto == null)
             {
@@ -103,7 +104,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="questionDto">A <see cref="QuestionDTO"/> containing property values of the <see cref="Question"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="QuestionDTO"/> containing property values of the updated <see cref="Question"/></returns>
         [HttpPut("questions/{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] QuestionDTO questionDto)
+        public async Task<IActionResult> Update(Guid id, [FromBody] QuestionDTO questionDto)
         {
             if (questionDto == null || questionDto.Id != id)
             {
@@ -144,7 +145,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Question"/></param>
         /// <returns>A <see cref="NoContentResult"/> if deletion is successful or a <see cref="HttpNotFoundResult"/> if the <see cref="Question"/> is not found</returns>
         [HttpDelete("questions/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             var question = await _questionStore.GetQuestionAsync(id);
             if (question == null)

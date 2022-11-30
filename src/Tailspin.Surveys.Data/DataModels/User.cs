@@ -7,9 +7,11 @@ namespace Tailspin.Surveys.Data.DataModels
 {
     public class User
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
-        public int TenantId { get; set; }
+        public Guid TenantId { get; set; }
+
+        public virtual Tenant Tenant { get; set; }
 
         public string ObjectId { get; set; }
 

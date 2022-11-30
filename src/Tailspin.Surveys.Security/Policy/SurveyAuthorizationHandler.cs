@@ -62,8 +62,8 @@ namespace Tailspin.Surveys.Security.Policy
             // if user is owner of the survey
             //      Add OWNER to the permission set
             var permissions = new List<UserPermissionType>();
-            int surveyTenantId = context.User.GetSurveyTenantIdValue();
-            int userId = context.User.GetSurveyUserIdValue();
+            Guid surveyTenantId = context.User.GetSurveyTenantIdValue();
+            Guid userId = context.User.GetSurveyUserIdValue();
             string user = context.User.GetUserName();
 
             if (resource.TenantId == surveyTenantId)
@@ -89,7 +89,7 @@ namespace Tailspin.Surveys.Security.Policy
                     permissions.Add(UserPermissionType.Owner);
                 }
             }
-            if (resource.Contributors != null && resource.Contributors.Any(x => x.UserId == userId))
+            if (resource.SurveyContributors != null && resource.SurveyContributors.Any(x => x.UserId == userId))
             {
                 permissions.Add(UserPermissionType.Contributor);
             }

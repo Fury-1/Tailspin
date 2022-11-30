@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Tailspin.Surveys.Data.DataModels;
@@ -16,16 +17,16 @@ namespace Tailspin.Surveys.Web.Services
     /// </summary>
     public interface ISurveyService
     {
-        Task<SurveyDTO> GetSurveyAsync(int id);
-        Task<UserSurveysDTO> GetSurveysForUserAsync(int userId);
-        Task<TenantSurveysDTO> GetSurveysForTenantAsync(int tenantId);
+        Task<SurveyDTO> GetSurveyAsync(Guid id);
+        Task<UserSurveysDTO> GetSurveysForUserAsync(Guid userId);
+        Task<TenantSurveysDTO> GetSurveysForTenantAsync(Guid tenantId);
         Task<SurveyDTO> CreateSurveyAsync(SurveyDTO survey);
         Task<SurveyDTO> UpdateSurveyAsync(SurveyDTO survey);
-        Task<SurveyDTO> DeleteSurveyAsync(int id);
-        Task<ContributorsDTO> GetSurveyContributorsAsync(int id);
+        Task<SurveyDTO> DeleteSurveyAsync(Guid id);
+        Task<ContributorsDTO> GetSurveyContributorsAsync(Guid id);
         Task<ApiResult<IEnumerable<SurveyDTO>>> GetPublishedSurveysAsync();
-        Task<SurveyDTO> PublishSurveyAsync(int id);
-        Task<SurveyDTO> UnPublishSurveyAsync(int id);
+        Task<SurveyDTO> PublishSurveyAsync(Guid id);
+        Task<SurveyDTO> UnPublishSurveyAsync(Guid id);
         Task ProcessPendingContributorRequestsAsync();
         Task AddContributorRequestAsync(ContributorRequest contributorRequest);
     }

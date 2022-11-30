@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Tailspin.Surveys.Data.DataModels;
@@ -16,11 +17,11 @@ namespace Tailspin.Surveys.Data.DataStore
             _dbContext = dbContext;
         }
 
-       public async Task<Question> GetQuestionAsync(int id)
+       public async Task<Question> GetQuestionAsync(Guid id)
         {
             return await _dbContext.Questions
                 .Include(q => q.Survey)
-                .ThenInclude(s => s.Contributors)
+                .ThenInclude(s => s.SurveyContributors)
                 .SingleOrDefaultAsync(q => q.Id == id)
                 .ConfigureAwait(false);
         }

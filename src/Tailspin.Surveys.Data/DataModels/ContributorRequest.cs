@@ -9,13 +9,17 @@ namespace Tailspin.Surveys.Data.DataModels
     public class ContributorRequest
     {
         [Required]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
-        public int SurveyId { get; set; }
+        public Guid SurveyId { get; set; }
 
         [Required]
         public string EmailAddress { get; set; }
+
+        public Guid TenantId { get;set; }
+
+        public virtual Survey Survey { get; set; }
 
         [Required]
         public DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;

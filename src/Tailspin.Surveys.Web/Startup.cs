@@ -70,6 +70,8 @@ namespace Tailspin.Surveys.Web
                     });
             });
 
+           
+
             services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApp(
                     options =>
@@ -89,10 +91,10 @@ namespace Tailspin.Surveys.Web
                 options.InstanceName = "TokenCache";
             });
 
+
             // Add Entity Framework services to the services container.
-            services.AddEntityFrameworkSqlServer()
-                   .AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configOptions.Data.SurveysConnectionString), ServiceLifetime.Transient);
-        
+            services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(configOptions.Data.SurveysConnectionString),ServiceLifetime.Transient);
+
             // Register application services.
             services.AddSingleton<HttpClientService>();
             

@@ -53,7 +53,17 @@ namespace Tailspin.Surveys.Web.Controllers
                 // If there are any pending contributor requests that 
                 await _surveyService.ProcessPendingContributorRequestsAsync();
 
-                var userId = User.GetSurveyUserIdValue();
+                // var userId = User.GetSurveyUserIdValue();
+                Guid userId = Guid.Empty;
+                try{
+
+                    string userID = User.GetObjectIdentifierValue();
+                    userId = new Guid(userID);
+                }
+                catch
+                {
+                    Console.WriteLine("cannot convert");
+                }
                 var user = User.GetObjectIdentifierValue();
                 var issuerValue = User.GetIssuerValue();
                 var actionName = $"{typeof(SurveyController).FullName}.{nameof(Index)}";
@@ -159,7 +169,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A view showing the contents of a <see cref="Survey"/>, or an error message if the <see cref="Survey"/> is not found</returns>
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(Guid id)
         {
             try
             {
@@ -188,7 +198,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A view showing the <see cref="Survey"/>'s title and questions</returns>
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(Guid id)
         {
             try
             {
@@ -222,7 +232,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A view with form fields for the <see cref="Survey"/> being edited</returns>
-        public async Task<IActionResult> EditTitle(int id)
+        public async Task<IActionResult> EditTitle(Guid id)
         {
             try
             {
@@ -289,7 +299,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id for the <see cref="Survey"/></param>
         /// <returns>A view that shows a delete confirmation prompt</returns>
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             try
             {
@@ -347,7 +357,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A view showing contributors associated with a <see cref="Survey"/></returns>
-        public async Task<IActionResult> Contributors(int id)
+        public async Task<IActionResult> Contributors(Guid id)
         {
             try
             {
@@ -374,7 +384,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A view with form fields used to create the <see cref="ContributorRequest"/></returns>
-        public async Task<IActionResult> RequestContributor(int id)
+        public async Task<IActionResult> RequestContributor(Guid id)
         {
             try
             {
@@ -461,7 +471,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A page that asks the user to confirm that he/she wants to publish this <see cref="Survey"/></returns>
-        public async Task<IActionResult> Publish(int id)
+        public async Task<IActionResult> Publish(Guid id)
         {
             try
             {
@@ -535,7 +545,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>A page that asks the user to confirm that he/she wants to publish this <see cref="Survey"/></returns>
-        public async Task<IActionResult> UnPublish(int id)
+        public async Task<IActionResult> UnPublish(Guid id)
         {
             try
             {

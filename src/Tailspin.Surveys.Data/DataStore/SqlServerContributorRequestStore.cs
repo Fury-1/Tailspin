@@ -19,7 +19,7 @@ namespace Tailspin.Surveys.Data.DataStore
             _dbContext = dbContext;
         }
 
-        public async Task<ICollection<ContributorRequest>> GetRequestForSurveyAsync(int surveyId)
+        public async Task<ICollection<ContributorRequest>> GetRequestForSurveyAsync(Guid surveyId)
         {
             return await _dbContext.ContributorRequests
                 .Where(r => r.SurveyId == surveyId)

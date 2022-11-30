@@ -8,6 +8,7 @@ using Tailspin.Surveys.Web.Security;
 using Tailspin.Surveys.Web.Services;
 using Microsoft.Identity.Web;
 using System.Net.Http;
+using System;
 
 namespace Tailspin.Surveys.Web.Controllers
 {
@@ -30,7 +31,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of a <see cref="Tailspin.Surveys.Data.DataModels.Survey"/></param>
         /// <returns>A view with form fields for a new <see cref="Tailspin.Surveys.Data.DataModels.Question"/></returns>
-        public IActionResult Create(int id)
+        public IActionResult Create(Guid id)
         {
             var question = new QuestionDTO { SurveyId = id };
             return View(question);
@@ -76,7 +77,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of a <see cref="Tailspin.Surveys.Data.DataModels.Question"/></param>
         /// <returns>A view with form fields for the <see cref="Tailspin.Surveys.Data.DataModels.Question"/> being edited</returns>
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(Guid id)
         {
             try
             {
@@ -142,7 +143,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Tailspin.Surveys.Data.DataModels.Question"/></param>
         /// <returns>A view that shows a delete confirmation prompt</returns>
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             try
             {

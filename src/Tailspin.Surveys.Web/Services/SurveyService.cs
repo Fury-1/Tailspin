@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -38,7 +39,7 @@ namespace Tailspin.Surveys.Web.Services
             _downstreamWebApi = downstreamWebApi;
         }
 
-        public async Task<SurveyDTO> GetSurveyAsync(int id)
+        public async Task<SurveyDTO> GetSurveyAsync(Guid id)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<SurveyDTO>(_serviceName,
                     options =>
@@ -48,7 +49,7 @@ namespace Tailspin.Surveys.Web.Services
                     });
         }
 
-        public async Task<UserSurveysDTO> GetSurveysForUserAsync(int userId)
+        public async Task<UserSurveysDTO> GetSurveysForUserAsync(Guid userId)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<UserSurveysDTO>(_serviceName,
                     options =>
@@ -58,7 +59,7 @@ namespace Tailspin.Surveys.Web.Services
                     });
         }
 
-        public async Task<TenantSurveysDTO> GetSurveysForTenantAsync(int tenantId)
+        public async Task<TenantSurveysDTO> GetSurveysForTenantAsync(Guid tenantId)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<TenantSurveysDTO>(_serviceName,
                    options =>
@@ -85,7 +86,7 @@ namespace Tailspin.Surveys.Web.Services
             return await _downstreamWebApi.PutForUserAsync<SurveyDTO, SurveyDTO>(_serviceName, $"surveys/{survey.Id}", survey);
         }
 
-        public async Task<SurveyDTO> DeleteSurveyAsync(int id)
+        public async Task<SurveyDTO> DeleteSurveyAsync(Guid id)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<SurveyDTO>(_serviceName,
                     options =>
@@ -94,7 +95,7 @@ namespace Tailspin.Surveys.Web.Services
                         options.RelativePath = $"surveys/{id}";
                     });
         }
-        public async Task<SurveyDTO> PublishSurveyAsync(int id)
+        public async Task<SurveyDTO> PublishSurveyAsync(Guid id)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<SurveyDTO>(_serviceName,
                     options =>
@@ -103,7 +104,7 @@ namespace Tailspin.Surveys.Web.Services
                         options.RelativePath = $"surveys/{id}/publish";
                     });
         }
-        public async Task<SurveyDTO> UnPublishSurveyAsync(int id)
+        public async Task<SurveyDTO> UnPublishSurveyAsync(Guid id)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<SurveyDTO>(_serviceName,
                   options =>
@@ -113,7 +114,7 @@ namespace Tailspin.Surveys.Web.Services
                   });
         }
 
-        public async Task<ContributorsDTO> GetSurveyContributorsAsync(int id)
+        public async Task<ContributorsDTO> GetSurveyContributorsAsync(Guid id)
         {
             return await _downstreamWebApi.CallWebApiForUserAsync<ContributorsDTO>(_serviceName,
                 options =>

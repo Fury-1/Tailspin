@@ -28,14 +28,14 @@ gulp.task("clean:css", async function (cb) {
 
 gulp.task("clean", gulp.series(["clean:js", "clean:css"]));
 
-gulp.task("min:js", async function ( ) {
+gulp.task("min:js", async function () {
     gulp.src([paths.js, "!" + paths.minJs], { base: "." })
         .pipe(concat(paths.concatJsDest))
         .pipe(uglify())
         .pipe(gulp.dest("."));
 });
 
-gulp.task("min:css", async function ( ) {
+gulp.task("min:css", async function () {
     gulp.src([paths.css, "!" + paths.minCss])
         .pipe(concat(paths.concatCssDest))
         .pipe(cssmin())

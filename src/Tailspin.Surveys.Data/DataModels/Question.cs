@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Tailspin.Surveys.Data.DataModels
@@ -20,7 +21,9 @@ namespace Tailspin.Surveys.Data.DataModels
             this.Type = QuestionType.SimpleText;
         }
 
-        public int Id { get; set; }
+        public Guid Id { get; set; }
+
+        public Guid TenantId { get; set; }
 
         [Required]
         [Display(Name = "Question")]
@@ -31,7 +34,7 @@ namespace Tailspin.Surveys.Data.DataModels
         [Display(Name = "Answer Choices")]
         public string PossibleAnswers { get; set; }
 
-        public int SurveyId { get; set; }
+        public Guid SurveyId { get; set; }
 
         // Navigation properties
         public Survey Survey { get; set; }

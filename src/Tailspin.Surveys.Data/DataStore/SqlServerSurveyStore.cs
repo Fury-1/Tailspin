@@ -21,7 +21,7 @@ namespace Tailspin.Surveys.Data.DataStore
             _dbContext = dbContext;
         }
 
-        public async Task<ICollection<Survey>> GetSurveysByOwnerAsync(int userId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
+        public async Task<ICollection<Survey>> GetSurveysByOwnerAsync(Guid userId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
         {
             var cappedPageSize = Math.Min(Constants.MaxPageSize, pageSize);
             return await _dbContext.Surveys.Where(s => s.OwnerId == userId && !s.Published)
@@ -32,7 +32,7 @@ namespace Tailspin.Surveys.Data.DataStore
                                      .ConfigureAwait(false);
         }
 
-        public async Task<ICollection<Survey>> GetPublishedSurveysByOwnerAsync(int userId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
+        public async Task<ICollection<Survey>> GetPublishedSurveysByOwnerAsync(Guid userId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
         {
             var cappedPageSize = Math.Min(Constants.MaxPageSize, pageSize);
             return await _dbContext.Surveys.Where(s => s.OwnerId == userId && s.Published)
@@ -43,7 +43,7 @@ namespace Tailspin.Surveys.Data.DataStore
                                            .ConfigureAwait(false);
         }
 
-        public async Task<ICollection<Survey>> GetSurveysByContributorAsync(int userId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
+        public async Task<ICollection<Survey>> GetSurveysByContributorAsync(Guid userId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
         {
             var cappedPageSize = Math.Min(Constants.MaxPageSize, pageSize);
             return await _dbContext.SurveyContributors.Include(sc => sc.Survey)
@@ -56,7 +56,7 @@ namespace Tailspin.Surveys.Data.DataStore
                                                       .ConfigureAwait(false);
         }
 
-        public async Task<ICollection<Survey>> GetPublishedSurveysByTenantAsync(int tenantId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
+        public async Task<ICollection<Survey>> GetPublishedSurveysByTenantAsync(Guid tenantId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
         {
             var cappedPageSize = Math.Min(Constants.MaxPageSize, pageSize);
             return await _dbContext.Surveys.Where(s => s.TenantId == tenantId && s.Published)
@@ -67,7 +67,7 @@ namespace Tailspin.Surveys.Data.DataStore
                                            .ConfigureAwait(false);
         }
 
-        public async Task<ICollection<Survey>> GetUnPublishedSurveysByTenantAsync(int tenantId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
+        public async Task<ICollection<Survey>> GetUnPublishedSurveysByTenantAsync(Guid tenantId, int pageIndex = 0, int pageSize = Constants.DefaultPageSize)
         {
             var cappedPageSize = Math.Min(Constants.MaxPageSize, pageSize);
             return await _dbContext.Surveys.Where(s => s.TenantId == tenantId && !s.Published)
@@ -89,13 +89,13 @@ namespace Tailspin.Surveys.Data.DataStore
                                            .ConfigureAwait(false);
         }
 
-        public async Task<Survey> GetSurveyAsync(int id)
+        public async Task<Survey> GetSurveyAsync(Guid id)
         {
             return await _dbContext.Surveys
-                .Include(survey => survey.Contributors)
+                .Include(survey => survey.SurveyContributors)
                 .ThenInclude(contrib => contrib.User)
                 .Include(survey => survey.Questions)
-                .Include(survey => survey.Requests)
+                .Include(survey => survey.ContributorRequests)
                 .SingleOrDefaultAsync(s => s.Id == id)
                 .ConfigureAwait(false);
         }
@@ -129,7 +129,7 @@ namespace Tailspin.Surveys.Data.DataStore
             return survey;
         }
 
-        public async Task<Survey> PublishSurveyAsync(int id)
+        public async Task<Survey> PublishSurveyAsync(Guid id)
         {
             Survey survey = await _dbContext.Surveys
                 .SingleOrDefaultAsync(s => s.Id == id)
@@ -143,7 +143,7 @@ namespace Tailspin.Surveys.Data.DataStore
             return survey;
         }
 
-        public async Task<Survey> UnPublishSurveyAsync(int id)
+        public async Task<Survey> UnPublishSurveyAsync(Guid id)
         {
             Survey survey = await _dbContext.Surveys
                 .SingleOrDefaultAsync(s => s.Id == id)

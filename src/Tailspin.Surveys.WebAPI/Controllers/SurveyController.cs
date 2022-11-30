@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
     /// This class provides a REST based API for the management of surveys.
     /// This class uses Bearer token authentication and authorization.
     /// </summary>
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+   // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class SurveyController : Controller
     {
         private readonly ISurveyStore _surveyStore;
@@ -38,7 +39,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="SurveyDTO"/> if found, otherwise a <see cref="HttpNotFoundResult"/></returns>
         [HttpGet("surveys/{id:int}", Name = "GetSurvey")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
             if (survey == null)
@@ -60,7 +61,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="userId">The id of the user</param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="UserSurveysDTO"/> populated with <see cref="Survey"/>s that the user owns or contributes to, or published</returns>
         [HttpGet("users/{userId}/surveys")]
-        public async Task<IActionResult> GetSurveysForUser(int userId)
+        public async Task<IActionResult> GetSurveysForUser(Guid userId)
         {
             if (User.GetSurveyUserIdValue() != userId)
             {
@@ -81,7 +82,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="tenantId">The id of the <see cref="Tenant"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="TenantSurveysDTO"/> populated with Published and Unpublished surveys associated with a <see cref="Tenant"/></returns>
         [HttpGet("tenants/{tenantId}/surveys")]
-        public async Task<IActionResult> GetSurveysForTenant(int tenantId)
+        public async Task<IActionResult> GetSurveysForTenant(Guid tenantId)
         {
             if (User.GetSurveyTenantIdValue() != tenantId)
             {
@@ -112,7 +113,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="ContributorsDTO"/> populated with an enumerable collection of users who contribute to the specified <see cref="Survey"/></returns>
         [HttpGet("surveys/{id}/contributors")]
-        public async Task<IActionResult> GetSurveyContributors(int id)
+        public async Task<IActionResult> GetSurveyContributors(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
             if (survey == null)
@@ -129,8 +130,8 @@ namespace Tailspin.Surveys.WebAPI.Controllers
             return Ok(new ContributorsDTO()
             {
                 SurveyId = id,
-                Contributors = survey.Contributors.Select(x => new UserDTO { Email = x.User.Email }).ToArray(),
-                Requests = survey.Requests.Where(r => r.SurveyId == id).ToArray()
+                Contributors = survey.SurveyContributors.Select(x => new UserDTO { Email = x.User.Email }).ToArray(),
+                Requests = survey.ContributorRequests.Where(r => r.SurveyId == id).ToArray()
             });
         }
 
@@ -171,7 +172,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="item">A <see cref="SurveyDTO"/> containing property values of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="SurveyDTO"/> containing property values of the updated <see cref="Survey"/></returns>
         [HttpPut("surveys/{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] SurveyDTO item)
+        public async Task<IActionResult> Update(Guid id, [FromBody] SurveyDTO item)
         {
             if (item == null || item.Id != id)
             {
@@ -208,7 +209,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains the deleted <see cref="Survey"/> if deletion is successful or a <see cref="HttpNotFoundResult"/> if the <see cref="Survey"/> is not found</returns>
         [HttpDelete("surveys/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
             if (survey == null)
@@ -278,12 +279,12 @@ namespace Tailspin.Surveys.WebAPI.Controllers
             {
                 var survey = await _surveyStore.GetSurveyAsync(contributorRequest.SurveyId);
 
-                int contributorId = User.GetSurveyUserIdValue();
+                Guid contributorId = User.GetSurveyUserIdValue();
 
                 // Check for existing contributor assignment
-                if (!survey.Contributors.Any(x => x.UserId == contributorId))
+                if (!survey.SurveyContributors.Any(x => x.UserId == contributorId))
                 {
-                    survey.Contributors.Add(new SurveyContributor { SurveyId = contributorRequest.SurveyId, UserId = contributorId });
+                    survey.SurveyContributors.Add(new SurveyContributor { SurveyId = contributorRequest.SurveyId, UserId = contributorId });
                     await _surveyStore.UpdateSurveyAsync(survey);
                 }
 
@@ -299,7 +300,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="SurveyDTO"/> of a published <see cref="Survey"/>, or a <see cref="HttpNotFoundResult"/> if the <see cref="Survey"/> is not found</returns>
         [HttpPut("surveys/{id}/publish")]
-        public async Task<IActionResult> Publish(int id)
+        public async Task<IActionResult> Publish(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
             if (survey == null)
@@ -324,7 +325,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="SurveyDTO"/> of an unpublished <see cref="Survey"/>, or a <see cref="HttpNotFoundResult"/> if the <see cref="Survey"/> is not found</returns>
         [HttpPut("surveys/{id}/unpublish")]
-        public async Task<IActionResult> UnPublish(int id)
+        public async Task<IActionResult> UnPublish(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
             if (survey == null)

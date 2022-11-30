@@ -53,14 +53,14 @@ namespace System.Security.Claims
             return principal.FindFirstValue(AzureADClaimTypes.TenantId, true);
         }
 
-        public static int GetSurveyUserIdValue(this ClaimsPrincipal principal)
+        public static Guid GetSurveyUserIdValue(this ClaimsPrincipal principal)
         {
-            return (int)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyUserIdClaimType, true), typeof(int));
+            return (Guid)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyUserIdClaimType, true), typeof(int));
         }
 
-        public static int GetSurveyTenantIdValue(this ClaimsPrincipal principal)
+        public static Guid GetSurveyTenantIdValue(this ClaimsPrincipal principal)
         {
-            return (int)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyTenantIdClaimType, true), typeof(int));
+            return (Guid)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyTenantIdClaimType, true), typeof(int));
         }
 
         public static string GetObjectIdentifierValue(this ClaimsPrincipal principal, bool throwIfNotFound = true)

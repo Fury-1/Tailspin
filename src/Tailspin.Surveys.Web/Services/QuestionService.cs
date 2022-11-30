@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
@@ -30,7 +31,7 @@ namespace Tailspin.Surveys.Web.Services
             _serviceName = configOptions.Value.SurveyApi.Name;
         }
 
-        public async Task<QuestionDTO> GetQuestionAsync(int id)
+        public async Task<QuestionDTO> GetQuestionAsync(Guid id)
         {
             return await downstreamWebApi.CallWebApiForUserAsync<QuestionDTO>(_serviceName,
                      options =>
@@ -50,7 +51,7 @@ namespace Tailspin.Surveys.Web.Services
             return await downstreamWebApi.PutForUserAsync<QuestionDTO, QuestionDTO>(_serviceName, $"questions/{question.Id}", question);
         }
 
-        public async Task DeleteQuestionAsync(int id)
+        public async Task DeleteQuestionAsync(Guid id)
         {
             await downstreamWebApi.CallWebApiForUserAsync(_serviceName,
                   options =>
