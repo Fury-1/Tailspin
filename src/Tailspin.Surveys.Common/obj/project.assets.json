@@ -2404,11 +2404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
+      "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
       "projectName": "Tailspin.Surveys.Common",
-      "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
+      "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
       "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
-      "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\obj\\",
+      "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

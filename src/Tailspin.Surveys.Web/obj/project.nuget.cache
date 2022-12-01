@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1KjAnjUZIodes+HDg0K5CUq10q3vB2pDESYy1k0SMFyYLpkCTqfLholFQRkBWmZpGTYbiKVgQe8EeYhvqYEozw==",
+  "dgSpecHash": "4kh2YTT9+rAaopgsjJU4a7PT9X3rgm6N+3TKOBBCGtK+fP5qechTk4oAGXqymp8ABhnMEp1yevP5O29YdrZQoQ==",
   "success": true,
-  "projectFilePath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Web\\Tailspin.Surveys.Web.csproj",
+  "projectFilePath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Web\\Tailspin.Surveys.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\angular.ui.bootstrap\\1.3.3\\angular.ui.bootstrap.1.3.3.nupkg.sha512",
     "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\angularjs.core\\1.7.5\\angularjs.core.1.7.5.nupkg.sha512",

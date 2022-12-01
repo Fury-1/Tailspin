@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {}
+    "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {}
   },
   "projects": {
-    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
+    "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
+        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
         "projectName": "Tailspin.Surveys.Common",
-        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
+        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj",
         "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
-        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\obj\\",
+        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -150,14 +150,14 @@
         }
       }
     },
-    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
+    "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
+        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
         "projectName": "Tailspin.Surveys.Data",
-        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
+        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj",
         "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
-        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\obj\\",
+        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -181,8 +181,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
-                "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj"
+              "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj": {
+                "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Common\\Tailspin.Surveys.Common.csproj"
               }
             }
           }
@@ -268,14 +268,14 @@
         }
       }
     },
-    "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {
+    "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
+        "projectUniqueName": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
         "projectName": "Tailspin.Surveys.Security",
-        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
+        "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Security\\Tailspin.Surveys.Security.csproj",
         "packagesPath": "C:\\Users\\Varnashree.Rachith\\.nuget\\packages\\",
-        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Security\\obj\\",
+        "outputPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -299,8 +299,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
-                "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj"
+              "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj": {
+                "projectPath": "C:\\Kelsa\\Tailspin\\Tailspin1-12\\TailspinDronaPOC\\src\\Tailspin.Surveys.Data\\Tailspin.Surveys.Data.csproj"
               }
             }
           }
