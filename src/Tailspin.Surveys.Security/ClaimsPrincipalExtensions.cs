@@ -55,12 +55,12 @@ namespace System.Security.Claims
 
         public static Guid GetSurveyUserIdValue(this ClaimsPrincipal principal)
         {
-            return (Guid)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyUserIdClaimType, true), typeof(int));
+            return (Guid)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyUserIdClaimType, true), typeof(Guid));
         }
 
         public static Guid GetSurveyTenantIdValue(this ClaimsPrincipal principal)
         {
-            return (Guid)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyTenantIdClaimType, true), typeof(int));
+            return (Guid)Convert.ChangeType(principal.FindFirstValue(SurveyClaimTypes.SurveyTenantIdClaimType, true), typeof(Guid));
         }
 
         public static string GetObjectIdentifierValue(this ClaimsPrincipal principal, bool throwIfNotFound = true)

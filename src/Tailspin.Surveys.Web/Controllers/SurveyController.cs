@@ -97,7 +97,18 @@ namespace Tailspin.Surveys.Web.Controllers
         {
             try
             {
-                var tenantId = User.GetSurveyTenantIdValue();
+                //var tenantId = User.GetSurveyTenantIdValue();
+                Guid tenantId = Guid.Empty;
+                try
+                {
+
+                    string tenantID = User.GetObjectIdentifierValue();
+                    tenantId = new Guid(tenantID);
+                }
+                catch
+                {
+                    Console.WriteLine("cannot convert");
+                }
                 var surveys = await _surveyService.GetSurveysForTenantAsync(tenantId);
                 // If the user is an administrator, additional functionality is exposed. 
                 var authResult = await _authorizationService.AuthorizeAsync(User, PolicyNames.RequireSurveyAdmin);

@@ -63,10 +63,10 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         [HttpGet("users/{userId}/surveys")]
         public async Task<IActionResult> GetSurveysForUser(Guid userId)
         {
-            if (User.GetSurveyUserIdValue() != userId)
-            {
-                return StatusCode(403);
-            }
+           // if (User.GetSurveyUserIdValue() != userId)
+            //{
+           //     return StatusCode(403);
+           // }
 
             var surveys = new UserSurveysDTO();
             surveys.Published = (await _surveyStore.GetPublishedSurveysByOwnerAsync(userId)).Select(DataMapping._surveyToSummaryDto).ToArray();
@@ -84,10 +84,10 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         [HttpGet("tenants/{tenantId}/surveys")]
         public async Task<IActionResult> GetSurveysForTenant(Guid tenantId)
         {
-            if (User.GetSurveyTenantIdValue() != tenantId)
-            {
-                return StatusCode(403);
-            }
+           // if (User.GetSurveyTenantIdValue() != tenantId)
+            //{
+             //   return StatusCode(403);
+            //}
 
             var surveys = new TenantSurveysDTO();
             surveys.Published = (await _surveyStore.GetPublishedSurveysByTenantAsync(tenantId)).Select(DataMapping._surveyToSummaryDto).ToArray();

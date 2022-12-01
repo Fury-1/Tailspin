@@ -91,11 +91,9 @@ namespace Tailspin.Surveys.Data.Migrations
                     b.Property<Guid>("OwnerId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("OwnerId1")
-                        .HasColumnType("uuid");
+                    
 
-                    b.Property<Guid>("OwnerTenantId")
-                        .HasColumnType("uuid");
+                
 
                     b.Property<bool>("Published")
                         .HasColumnType("boolean");
@@ -109,7 +107,7 @@ namespace Tailspin.Surveys.Data.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.HasIndex("OwnerId1", "OwnerTenantId");
+                  
 
                     b.ToTable("Surveys");
                 });
@@ -126,11 +124,9 @@ namespace Tailspin.Surveys.Data.Migrations
                     b.Property<Guid>("TenantId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("UserId1")
-                        .HasColumnType("uuid");
+                   
 
-                    b.Property<Guid>("UserTenantId")
-                        .HasColumnType("uuid");
+           
 
                     b.HasKey("SurveyId", "UserId", "TenantId")
                         .HasName("SurveyContributors_pkey");
@@ -139,7 +135,7 @@ namespace Tailspin.Surveys.Data.Migrations
 
                     b.HasIndex("SurveyId", "TenantId");
 
-                    b.HasIndex("UserId1", "UserTenantId");
+             
 
                     b.ToTable("SurveyContributors");
                 });
@@ -228,13 +224,7 @@ namespace Tailspin.Surveys.Data.Migrations
                         .HasConstraintName("FK_Surveys_tenant_tenantId")
                         .IsRequired();
 
-                    b.HasOne("Tailspin.Surveys.Data.DataModels.User", "Owner")
-                        .WithMany()
-                        .HasForeignKey("OwnerId1", "OwnerTenantId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Owner");
+                 
 
                     b.Navigation("Tenant");
                 });
@@ -253,17 +243,12 @@ namespace Tailspin.Surveys.Data.Migrations
                         .HasConstraintName("FK_SurveyContributors_Surveys_SurveyId1")
                         .IsRequired();
 
-                    b.HasOne("Tailspin.Surveys.Data.DataModels.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId1", "UserTenantId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
 
                     b.Navigation("Survey");
 
                     b.Navigation("Tenant");
 
-                    b.Navigation("User");
+                    
                 });
 
             modelBuilder.Entity("Tailspin.Surveys.Data.DataModels.User", b =>
