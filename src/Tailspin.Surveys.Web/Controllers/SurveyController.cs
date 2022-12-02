@@ -16,6 +16,7 @@ using System;
 using System.Linq;
 using Microsoft.Identity.Web;
 using System.Net.Http;
+using Tailspin.Surveys.Data.DataStore;
 
 namespace Tailspin.Surveys.Web.Controllers
 {
@@ -29,14 +30,17 @@ namespace Tailspin.Surveys.Web.Controllers
         private readonly ISurveyService _surveyService;
         private readonly ILogger _logger;
         private readonly IAuthorizationService _authorizationService;
+        private readonly ISurveyStore _surveyStore;
 
         public SurveyController(ISurveyService surveyService,
                                 ILogger<SurveyController> logger,
-                                IAuthorizationService authorizationService)
+                                IAuthorizationService authorizationService,
+                                ISurveyStore surveyStore)
         {
             _surveyService = surveyService;
             _logger = logger;
             _authorizationService = authorizationService;
+            _surveyStore = surveyStore;
         }
 
         /// <summary>
@@ -155,8 +159,13 @@ namespace Tailspin.Surveys.Web.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var result = await _surveyService.CreateSurveyAsync(survey);
-                    return RedirectToAction("Edit", new { id = result.Id });
+                    //var survey = new Survey();
+                    survey.OwnerId = User.GetSurveyUserIdValue();
+                    survey.TenantId = User.GetSurveyTenantIdValue();
+                    var newSurvey = new Survey { Id = survey.Id, OwnerId = survey.OwnerId, TenantId = survey.TenantId, Title = survey.Title };
+                    await _surveyStore.AddSurveyAsync(newSurvey);
+                    //var result = await _surveyService.CreateSurveyAsync(survey);
+                    return RedirectToAction("Get", new { id =newSurvey.Id });
                 }
                 else
                 {
@@ -174,6 +183,22 @@ namespace Tailspin.Surveys.Web.Controllers
             }
             return View("~/Views/Shared/Error.cshtml");
         }
+        public async Task<IActionResult> Get(Guid id)
+        {
+            var survey = await _surveyStore.GetSurveyAsync(id);
+            if (survey == null)
+            {
+                return NotFound();
+            }
+
+            // The AuthorizationService uses the policies in the Tailspin.Surveys.Security project
+            if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Read)).Succeeded)
+            {
+                return StatusCode(403);
+            }
+            return Ok(DataMapping._surveyToDto(survey));
+        }
+
 
         /// <summary>
         /// This action shows the details of a specific <see cref="Survey"/>.

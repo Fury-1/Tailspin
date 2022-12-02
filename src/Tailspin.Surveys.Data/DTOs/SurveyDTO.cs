@@ -11,6 +11,7 @@ namespace Tailspin.Surveys.Data.DTOs
     {
         public Guid Id { get; set; }
         public Guid OwnerId { get; set; }
+        public Guid TenantId { get; set; }
 
         [Required]
         [Display(Name = "Title")]

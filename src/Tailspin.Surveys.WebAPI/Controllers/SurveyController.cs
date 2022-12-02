@@ -84,9 +84,9 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         [HttpGet("tenants/{tenantId}/surveys")]
         public async Task<IActionResult> GetSurveysForTenant(Guid tenantId)
         {
-           // if (User.GetSurveyTenantIdValue() != tenantId)
+            //if (User.GetSurveyTenantIdValue() != tenantId)
             //{
-             //   return StatusCode(403);
+            //    return StatusCode(403);
             //}
 
             var surveys = new TenantSurveysDTO();

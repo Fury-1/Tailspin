@@ -15,10 +15,10 @@ namespace Tailspin.Surveys.Security.Policy
     {
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, SurveyCreatorRequirement requirement)
         {
-            if (context.User.HasClaim(ClaimTypes.Role, Roles.SurveyAdmin) || context.User.HasClaim(ClaimTypes.Role, Roles.SurveyCreator))
-            {
+           // if (context.User.HasClaim(ClaimTypes.Role, Roles.SurveyAdmin) || context.User.HasClaim(ClaimTypes.Role, Roles.SurveyCreator))
+         //   {
                 context.Succeed(requirement);
-            }
+       //     }
 
             return Task.FromResult(0);
         }

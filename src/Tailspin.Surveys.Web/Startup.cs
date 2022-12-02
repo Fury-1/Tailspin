@@ -17,6 +17,7 @@ using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
 using Microsoft.IdentityModel.Tokens;
 using Tailspin.Surveys.Data.DataModels;
+using Tailspin.Surveys.Data.DataStore;
 using Tailspin.Surveys.Security.Policy;
 using Tailspin.Surveys.Web.Security;
 using Tailspin.Surveys.Web.Services;
@@ -104,6 +105,7 @@ namespace Tailspin.Surveys.Web
             services.AddTransient<SignInManager, SignInManager>();
             services.AddTransient<TenantManager, TenantManager>();
             services.AddTransient<UserManager, UserManager>();
+            services.AddScoped<ISurveyStore, SqlServerSurveyStore>();
             services.AddHttpContextAccessor();
 
             services.AddControllersWithViews(options =>
