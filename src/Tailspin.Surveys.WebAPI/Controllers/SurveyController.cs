@@ -38,7 +38,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// </summary>
         /// <param name="id">The id of the <see cref="Survey"/></param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="SurveyDTO"/> if found, otherwise a <see cref="HttpNotFoundResult"/></returns>
-        [HttpGet("surveys/{id:int}", Name = "GetSurvey")]
+        [HttpGet("surveys/{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
@@ -48,10 +48,10 @@ namespace Tailspin.Surveys.WebAPI.Controllers
             }
 
             // The AuthorizationService uses the policies in the Tailspin.Surveys.Security project
-            if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Read)).Succeeded)
-            {
-                return StatusCode(403);
-            }
+           // if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Read)).Succeeded)
+           // {
+           //     return StatusCode(403);
+            //}
             return Ok(DataMapping._surveyToDto(survey));
         }
 
@@ -309,10 +309,10 @@ namespace Tailspin.Surveys.WebAPI.Controllers
             }
 
             // Validate that the current user has Publish permissions to this survey.
-            if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Publish)).Succeeded)
-            {
-                return StatusCode(403);
-            }
+            //if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Publish)).Succeeded)
+            //{
+            //    return StatusCode(403);
+            //}
 
             var published = await _surveyStore.PublishSurveyAsync(id);
 

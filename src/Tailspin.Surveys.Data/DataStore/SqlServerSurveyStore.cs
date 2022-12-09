@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Tailspin.Surveys.Common;
 using Tailspin.Surveys.Data.DataModels;
 
@@ -91,11 +92,14 @@ namespace Tailspin.Surveys.Data.DataStore
 
         public async Task<Survey> GetSurveyAsync(Guid id)
         {
-            return await _dbContext.Surveys
-            //    .Include(survey => survey.SurveyContributors)
-              //  .ThenInclude(contrib => contrib.User)
-                .Include(survey => survey.Questions)
-                .Include(survey => survey.ContributorRequests)
+            
+           
+            return  await _dbContext.Surveys
+                //    .Include(survey => survey.SurveyContributors)
+                //  .ThenInclude(contrib => contrib.User)
+               .Include(survey => survey.Questions)
+               .Include(survey => survey.ContributorRequests)
+                //.SingleOrDefaultAsync(s => s.TenantId)
                 .SingleOrDefaultAsync(s => s.Id == id)
                 .ConfigureAwait(false);
         }

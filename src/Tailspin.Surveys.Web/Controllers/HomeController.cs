@@ -44,6 +44,7 @@ namespace Tailspin.Surveys.Web.Controllers
         /// </summary>
         /// <param name="id">The id of a <see cref="Tailspin.Surveys.Data.DataModels.Survey"/></param>
         /// <returns>A view that shows a placeholder for the experience of taking a <see cref="Tailspin.Surveys.Data.DataModels.Survey"/></returns>
+        
         public IActionResult Details(int id)
         {
             return View();

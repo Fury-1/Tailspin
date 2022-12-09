@@ -58,16 +58,18 @@ namespace Tailspin.Surveys.Web.Controllers
                 await _surveyService.ProcessPendingContributorRequestsAsync();
 
                 // var userId = User.GetSurveyUserIdValue();
-                Guid userId = Guid.Empty;
-                try{
+                //Guid userId = Guid.Empty;
+                //try{
 
-                    string userID = User.GetObjectIdentifierValue();
-                    userId = new Guid(userID);
-                }
-                catch
-                {
-                    Console.WriteLine("cannot convert");
-                }
+                //    Guid userID = User.GetSurveyUserIdValue();
+                //    userId = new Guid(userID);
+                //}
+                //catch
+                //{
+                //    Console.WriteLine("cannot convert");
+                //}
+                var userId = User.GetSurveyUserIdValue();
+                //var user = User.GetObjectIdentifierValue();
                 var user = User.GetObjectIdentifierValue();
                 var issuerValue = User.GetIssuerValue();
                 var actionName = $"{typeof(SurveyController).FullName}.{nameof(Index)}";
@@ -78,7 +80,7 @@ namespace Tailspin.Surveys.Web.Controllers
                 // If the user is in the creator role, the view shows a "Create Survey" button.
                 var authResult = await _authorizationService.AuthorizeAsync(User, PolicyNames.RequireSurveyCreator);
                 ViewBag.IsUserCreator = authResult?.Succeeded;
-                _logger.GetSurveysForUserOperationSucceeded(actionName, user, issuerValue);
+               _logger.GetSurveysForUserOperationSucceeded(actionName, user, issuerValue);
                 return View(result);
             }
             catch (HttpRequestException requestEx) when ("Microsoft.Identity.Web".Equals(requestEx.Source) && "403 Forbidden".Equals(requestEx.Message?.Trim()))
@@ -102,17 +104,18 @@ namespace Tailspin.Surveys.Web.Controllers
             try
             {
                 //var tenantId = User.GetSurveyTenantIdValue();
-                Guid tenantId = Guid.Empty;
-                try
-                {
+                //Guid tenantId = Guid.Empty;
+                //try
+                //{
 
-                    string tenantID = User.GetObjectIdentifierValue();
-                    tenantId = new Guid(tenantID);
-                }
-                catch
-                {
-                    Console.WriteLine("cannot convert");
-                }
+                //    string tenantID = User.GetObjectIdentifierValue();
+                //    tenantId = new Guid(tenantID);
+                //}
+                //catch
+                //{
+                //    Console.WriteLine("cannot convert");
+                //}
+                var tenantId = User.GetSurveyTenantIdValue();
                 var surveys = await _surveyService.GetSurveysForTenantAsync(tenantId);
                 // If the user is an administrator, additional functionality is exposed. 
                 var authResult = await _authorizationService.AuthorizeAsync(User, PolicyNames.RequireSurveyAdmin);
@@ -165,7 +168,13 @@ namespace Tailspin.Surveys.Web.Controllers
                     var newSurvey = new Survey { Id = survey.Id, OwnerId = survey.OwnerId, TenantId = survey.TenantId, Title = survey.Title };
                     await _surveyStore.AddSurveyAsync(newSurvey);
                     //var result = await _surveyService.CreateSurveyAsync(survey);
-                    return RedirectToAction("Get", new { id =newSurvey.Id });
+                    //return RedirectToAction("Get", new { id = newSurvey.Id, tenantid = newSurvey.TenantId });
+                    var surveyy = await _surveyStore.GetSurveyAsync(survey.Id);
+                    //return Ok(DataMapping._surveyToDto(survey));
+                    return RedirectToAction("Edit",new { id = newSurvey.Id });
+                    // 
+                    //return View(survey.TenantId);S
+                    //return Ok(DataMapping._surveyToDto(newSurvey));
                 }
                 else
                 {
@@ -183,7 +192,8 @@ namespace Tailspin.Surveys.Web.Controllers
             }
             return View("~/Views/Shared/Error.cshtml");
         }
-        public async Task<IActionResult> Get(Guid id)
+
+        public async Task<IActionResult>Get(Guid id)
         {
             var survey = await _surveyStore.GetSurveyAsync(id);
             if (survey == null)
@@ -192,10 +202,10 @@ namespace Tailspin.Surveys.Web.Controllers
             }
 
             // The AuthorizationService uses the policies in the Tailspin.Surveys.Security project
-            if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Read)).Succeeded)
-            {
-                return StatusCode(403);
-            }
+            //if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Read)).Succeeded)
+            //{
+            //    return StatusCode(403);
+            //}
             return Ok(DataMapping._surveyToDto(survey));
         }
 
@@ -246,7 +256,12 @@ namespace Tailspin.Surveys.Web.Controllers
                     return View("~/Views/Shared/Error.cshtml");
                 }
 
-                return View(survey);
+                // return View(survey);
+                var newSurvey = new Survey
+                {
+                    Id = survey.Id
+                };
+                return RedirectToAction("Publish", new { id = newSurvey.Id });
             }
             catch (HttpRequestException requestEx) when ("Microsoft.Identity.Web".Equals(requestEx.Source) && "403 Forbidden".Equals(requestEx.Message?.Trim()))
             {
@@ -261,6 +276,38 @@ namespace Tailspin.Surveys.Web.Controllers
                 ViewBag.Message = "Unexpected Error";
             }
             return View("~/Views/Shared/Error.cshtml");
+        }
+
+        [HttpPut("surveys/{id}")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] SurveyDTO item)
+        {
+            if (item == null || item.Id != id)
+            {
+                return BadRequest();
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var survey = await _surveyStore.GetSurveyAsync(id);
+            if (survey == null)
+            {
+                return NotFound();
+            }
+
+            // Validate that the current user has Update permissions to this survey.
+            if (!(await _authorizationService.AuthorizeAsync(User, survey, Operations.Update)).Succeeded)
+            {
+                return StatusCode(403);
+            }
+
+            // Apply update
+            survey.Title = item.Title;
+            survey.Published = item.Published;
+
+            await _surveyStore.UpdateSurveyAsync(survey);
+            return Ok(DataMapping._surveyToDto(survey));
         }
 
         /// <summary>

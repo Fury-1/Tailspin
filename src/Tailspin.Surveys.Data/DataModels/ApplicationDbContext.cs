@@ -62,6 +62,7 @@ namespace Tailspin.Surveys.Data.DataModels
                 entity.HasKey(e => new { e.Id, e.TenantId })
                     .HasName("Surveys_pkey");
 
+
                 entity.Property(e => e.Id).HasDefaultValueSql("uuid_generate_v4()");
 
                 entity.Property(e => e.Title).IsRequired();

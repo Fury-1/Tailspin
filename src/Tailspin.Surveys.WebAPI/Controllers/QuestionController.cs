@@ -3,6 +3,7 @@
 
 using System;
 using System.Net;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -37,7 +38,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// </summary>
         /// <param name="id">The id of the Question</param>
         /// <returns>An <see cref="ObjectResult"/> that contains a <see cref="QuestionDTO"/> if found, otherwise a <see cref="NotFoundResult"/></returns>
-        [HttpGet("questions/{id:int}", Name = "GetQuestion")]
+        [HttpGet("questions/{id}", Name = "GetQuestion")]
         public async Task<IActionResult> Get(Guid id)
         {
             var question = await _questionStore.GetQuestionAsync(id);
@@ -60,7 +61,7 @@ namespace Tailspin.Surveys.WebAPI.Controllers
         /// <param name="id">The id of the <see cref="Question"/></param>
         /// <param name="questionDto">A <see cref="QuestionDTO"/> containing property values of the <see cref="Question"/></param>
         /// <returns>A <see cref="CreatedAtRouteResult"/> of the newly created <see cref="Question"/> if successfully persisted</returns>
-        [HttpPost("surveys/{id:int}/questions")]
+        [HttpPost("surveys/{id}/questions")]
         public async Task<IActionResult> Create(Guid id, [FromBody] QuestionDTO questionDto)
         {
             if (questionDto == null)
@@ -72,12 +73,16 @@ namespace Tailspin.Surveys.WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
+            questionDto.TenantId = User.GetSurveyTenantIdValue();
+
             var question = new Question
             {
                 SurveyId = id,
                 Text = questionDto.Text,
                 Type = questionDto.Type,
-                PossibleAnswers = questionDto.PossibleAnswers
+                PossibleAnswers = questionDto.PossibleAnswers,
+                TenantId = questionDto.TenantId
+
             };
 
             var survey = await _surveyStore.GetSurveyAsync(question.SurveyId);

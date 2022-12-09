@@ -10,6 +10,7 @@ namespace Tailspin.Surveys.Data.DTOs
     public class QuestionDTO
     {
         public Guid Id { get; set; }
+        public Guid TenantId { get; set; }
 
         [Required]
         [Display(Name = "Question")]
